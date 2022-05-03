@@ -4,10 +4,10 @@ public class CheckPoint
 {
 	
 	//Fields
-	protected String name;
-	protected String address;
-	protected int positionNumber;
-	protected final int price = 5;
+	public String name;
+	public String address;
+	public int positionNumber;
+	public final int price = 5;
 	
 	public CheckPoint(String name, String address, int positionNumber) 
 	{
@@ -51,6 +51,16 @@ public class CheckPoint
 	{
 		return price;
 	}
+
+
+	@Override
+	public String toString() 
+	{
+		return "[name=" + name + ", address=" + address + ", positionNumber=" + positionNumber + ", price="
+				+ price + "]\n";
+	}
+	
+	
 
 
 }
